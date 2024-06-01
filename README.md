@@ -9,12 +9,15 @@ This project is designed to ingest and process SEK exchange rate data using a va
 4. How can SEK exchange rate data be used for accurate price estimations in an e-commerce store?
 ## Data Ingestion and Processing
 ### Data Source
-The data is ingested from an [Exchange rate API](https://www.exchangerate-api.com/) which provides:
-Real-time SEK exchange rates,
+The data is ingested from an [Exchange rate API](https://www.exchangerate-api.com/),
 
-Last 30 days of historical exchange rate data,
+which provides:
 
-Last 6 months of historical exchange rate data.
+- Real-time SEK exchange rates,
+
+- Last 30 days of historical exchange rate data,
+
+- Last 6 months of historical exchange rate data.
 
 Real time data set is updated automatically by Glue workflow, hourly. Last 30 days and Last 6 months data set is updated automatically by Glue workflow, daily. 
 
