@@ -57,22 +57,24 @@ Grafana Cloud is employed to visualize the processed data. This provides an inte
 
   
 ## Workflow
-Data Ingestion: The Lambda function periodically fetches real-time and historical data from the exchange rate API.
+- Data Ingestion: The Lambda function periodically fetches real-time and historical data from the exchange rate API.
 
-Data Streaming: Ingested data is streamed into Amazon Kinesis Data Firehose.
+- Data Streaming: Ingested data is streamed into Amazon Kinesis Data Firehose.
 
-Data Storage: Data from Kinesis Data Firehose is stored in Amazon S3.
+- Data Storage: Data from Kinesis Data Firehose is stored in Amazon S3.
 
-Data Crawling, Cataloging and Glue workflow: AWS Glue crawls the data in S3 and catalogs it, preparing it for analysis by automating Glue workflow.
+- Data Crawling, Cataloging and Glue workflow: AWS Glue crawls the data in S3 and catalogs it, preparing it for analysis by automating Glue workflow.
 
 <img width="770" alt="Currency exchange real time Glue workflow" src="https://github.com/Svetsun/sek-exchange-rate/assets/124575095/8ea6e3b4-4214-4955-b64c-4627a7451dfb">
 
 On diagram: Glue workflow for Real time currency exchange data processing
 
 
-Data Querying: Queries are performed using AWS Athena to analyze the data.
+- Data Querying: Queries are performed using AWS Athena to analyze the data.
 
-Data Visualization: Processed data is visualized in Grafana Cloud, allowing for real-time monitoring and historical analysis of SEK exchange rates.
+- Data Visualization: Processed data is visualized in Grafana Cloud, allowing for real-time monitoring and historical analysis of SEK exchange rates.
+
+Hourly and daily updates are performed using EventBridge Schedule to activate Lambda functions and by scheduling data workflow executions.
 
 ## Benefits
 - Real-Time and Historical Data: The project provides both real-time exchange rates and comprehensive historical data.
