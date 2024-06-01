@@ -54,7 +54,7 @@ Grafana Cloud is employed to visualize the processed data. This provides an inte
 
 - [30 days of historical exchange rate data](https://feasun.grafana.net/dashboard/snapshot/NEnRSuvHGq8dUlY0xKdVHnGEm0Ls1qZG)
 
-- [6 months of historical exchange rate data](https://feasun.grafana.net/dashboard/snapshot/uEPsOFARzfSizcQRwK98fn2x5lqcgKfB)
+- [6 months of historical exchange rate data](https://feasun.grafana.net/dashboard/snapshot/AvRL4yKnAXYGDWGL1o8wiDXRnI8enSLE)
 
   
 ## Workflow
