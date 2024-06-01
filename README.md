@@ -74,7 +74,7 @@ On diagram: Glue workflow for Real time currency exchange data processing
 
 - Data Visualization: Processed data is visualized in Grafana Cloud, allowing for real-time monitoring and historical analysis of SEK exchange rates.
 
-Hourly and daily updates are performed using EventBridge Schedule to activate Lambda functions and by scheduling data workflow executions.
+Hourly and daily updates are performed using EventBridge Schedule to activate Lambda functions and by scheduling Glue data workflow executions.
 
 ## Benefits
 - Real-Time and Historical Data: The project provides both real-time exchange rates and comprehensive historical data.
