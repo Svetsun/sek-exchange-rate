@@ -2,12 +2,21 @@
 ---
 ## Project Overview
 This project is designed to ingest and process SEK exchange rate data using a variety of AWS services and visualize this data using Grafana Cloud. The data includes real-time rates, historical 30-day data, and 6-month data for SEK exchange rates. The primary purpose is to provide data for tasks such as price estimations in an e-commerce store.
+## Questions this Project Seeks to Answer
+1. What are the current SEK exchange rates against EUR, USD, and DKK in real-time?
+2. How have the SEK exchange rates fluctuated over the past 30 days?
+3. What are the trends in SEK exchange rates over the past 6 months?
+4. How can SEK exchange rate data be used for accurate price estimations in an e-commerce store?
 ## Data Ingestion and Processing
 ### Data Source
-The data is ingested from an exchange rate API which provides:
-Real-time SEK exchange rates
-30 days of historical exchange rate data
-6 months of historical exchange rate data
+The data is ingested from an [Exchange rate API](https://www.exchangerate-api.com/) which provides:
+Real-time SEK exchange rates,
+
+Last 30 days of historical exchange rate data,
+
+Last 6 months of historical exchange rate data.
+
+Real time data set is updated automatically by Glue workflow, hourly. Last 30 days and Last 6 months data set is updated automatically by Glue workflow, daily. 
 
 ### AWS Cloud Services Used
 `AWS Lambda`: A Python-based Lambda function is utilized to fetch data from the exchange rate API and trigger other AWS services.
@@ -54,6 +63,8 @@ Data Storage: Data from Kinesis Data Firehose is stored in Amazon S3.
 Data Crawling, Cataloging and Glue workflow: AWS Glue crawls the data in S3 and catalogs it, preparing it for analysis by automating Glue workflow.
 
 <img width="770" alt="Currency exchange real time Glue workflow" src="https://github.com/Svetsun/sek-exchange-rate/assets/124575095/8ea6e3b4-4214-4955-b64c-4627a7451dfb">
+
+On diagram: Glue workflow for Real time currency exchange data processing
 
 
 Data Querying: Queries are performed using AWS Athena to analyze the data.
