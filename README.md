@@ -18,6 +18,11 @@ AWS Athena: All data queries and analyses are performed using AWS Athena, allowi
 
 ## Data Visualization
 
+### Grafana Cloud:
+Grafana Cloud is employed to visualize the processed data. This provides an interactive and user-friendly interface for monitoring and analyzing SEK exchange rate trends against EUR, USD, and DKK.
+
+---
+
 #### Real-time and 30 days of historical exchange rate data:
 
 <img width="803" alt="Grafana dashboard real time" src="https://github.com/Svetsun/sek-exchange-rate/assets/124575095/198d0591-42ae-4d94-8f53-8597731b83cf">
@@ -35,10 +40,6 @@ AWS Athena: All data queries and analyses are performed using AWS Athena, allowi
 - [6 months of historical exchange rate data](https://feasun.grafana.net/dashboard/snapshot/uEPsOFARzfSizcQRwK98fn2x5lqcgKfB)
 
   
-
-### Grafana Cloud:
-Grafana Cloud is employed to visualize the processed data. This provides an interactive and user-friendly interface for monitoring and analyzing SEK exchange rate trends against EUR, USD, and DKK.
-
 ## Workflow
 Data Ingestion: The Lambda function periodically fetches real-time and historical data from the exchange rate API.
 Data Streaming: Ingested data is streamed into Amazon Kinesis Data Firehose.
