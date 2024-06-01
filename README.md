@@ -15,12 +15,17 @@ Amazon S3: Data fetched by the Lambda function is stored in S3 buckets for durab
 AWS Glue: Glue is used to crawl the data stored in S3, cataloging it for further processing and creating ETL (Extract, Transform, Load) workflows.
 AWS Athena: All data queries and analyses are performed using AWS Athena, allowing for efficient querying of data stored in S3.
 
-## Data Visualization 
-Dashboards you can see here:
+## Data Visualization
+
+#### Real-time and 30 days of historical exchange rate data:
 
 <img width="803" alt="Grafana dashboard real time" src="https://github.com/Svetsun/sek-exchange-rate/assets/124575095/198d0591-42ae-4d94-8f53-8597731b83cf">
 
+#### 6 months of historical exchange rate data
 
+<img width="806" alt="Grafana dashboard historical data" src="https://github.com/Svetsun/sek-exchange-rate/assets/124575095/6fa91ff7-2526-4a6f-81ea-ab8bcc39d426">
+
+### Dashboards you can see here:
 
 - [Real-time SEK exchange rates](https://feasun.grafana.net/dashboard/snapshot/Y4g6VzPeNJBJm5ZD0bpnQrA2u9IWKvtI)
 
