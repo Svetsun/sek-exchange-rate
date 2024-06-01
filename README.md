@@ -45,7 +45,8 @@ Grafana Cloud is employed to visualize the processed data. This provides an inte
 
 #### 6 months of historical exchange rate data
 
-<img width="806" alt="Grafana dashboard historical data" src="https://github.com/Svetsun/sek-exchange-rate/assets/124575095/6fa91ff7-2526-4a6f-81ea-ab8bcc39d426">
+<img width="804" alt="Grafana dashboard historical data" src="https://github.com/Svetsun/sek-exchange-rate/assets/124575095/3cd862a1-ff32-49e4-94f5-15f5230a92f9">
+
 
 ### Dashboards you can see here:
 
