@@ -2,7 +2,7 @@ import sys
 import json
 import boto3
 
-# replace these with the names from your environment
+
 BUCKET_TO_DEL = 'currency-exchange-table-parquet-bucket'
 DATABASE_TO_DEL = 'exchange_data_svetlana'
 TABLE_TO_DEL = 'currency_exchange_table_parquet_1'
