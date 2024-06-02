@@ -85,3 +85,9 @@ Hourly and daily updates are performed using EventBridge Schedule to activate La
 - Interactive Visualizations: Grafana Cloud offers a powerful platform for visualizing data, making it easier to monitor trends and make informed decisions.
 - Versatile Data Usage: The data can be used for various tasks such as price estimations in an e-commerce store, statistics on a dashboard, and internal reporting spreadsheets.
 - This project leverages the power of AWS cloud services to provide a robust solution for monitoring and analyzing SEK exchange rates, with the added benefit of real-time visualization through Grafana Cloud.
+
+## Future Improvements
+
+- Cost Optimization: Analyze and optimize the AWS services used to reduce operational costs while maintaining performance and reliability.
+
+- Data Quality Monitoring: Develop mechanisms to continuously monitor the quality and accuracy of the ingested data, ensuring reliability.
