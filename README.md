@@ -52,7 +52,7 @@ Grafana Cloud is employed to visualize the processed data. This provides an inte
 
 - [Real-time SEK exchange rates](https://feasun.grafana.net/dashboard/snapshot/O3FUQgWA9q1FYNmrqYitZQuNQ3fINWl4)
 
-- [30 days of historical exchange rate data](https://feasun.grafana.net/dashboard/snapshot/XZfiWVN16rhIfuYziAuGnjPHLkc5h8rq)
+- [30 days of historical exchange rate data](https://feasun.grafana.net/dashboard/snapshot/IpY1YhNj3nNTMXMLZqkB1vSP45fNEtj9)
 
 - [6 months of historical exchange rate data](https://feasun.grafana.net/dashboard/snapshot/AvRL4yKnAXYGDWGL1o8wiDXRnI8enSLE)
 
