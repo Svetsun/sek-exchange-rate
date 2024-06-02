@@ -9,7 +9,7 @@ This project is designed to ingest and process SEK exchange rate data using a va
 4. How can SEK exchange rate data be used for accurate price estimations in an e-commerce store?
 ## Data Ingestion and Processing
 ### Data Source
-The data is ingested from an [Exchange rate API](https://www.exchangerate-api.com/),
+The data is ingested from two different [Exchange rate API](https://www.exchangerate-api.com/),
 
 which provides:
 
