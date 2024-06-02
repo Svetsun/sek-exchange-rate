@@ -85,6 +85,41 @@ Hourly and daily updates are performed using EventBridge Schedule to activate La
 - Interactive Visualizations: Grafana Cloud offers a powerful platform for visualizing data, making it easier to monitor trends and make informed decisions.
 - Versatile Data Usage: The data can be used for various tasks such as price estimations in an e-commerce store, statistics on a dashboard, and internal reporting spreadsheets.
 - This project leverages the power of AWS cloud services to provide a robust solution for monitoring and analyzing SEK exchange rates, with the added benefit of real-time visualization through Grafana Cloud.
+- 
+## Project Deployment Description
+
+### Overview
+The deployment of this project involves setting up the infrastructure on AWS to ingest, process, store, and visualize SEK exchange rate data. The deployment process includes configuring AWS services, setting up automation for data updates, and ensuring the integration with Grafana Cloud for visualization.
+
+#### Steps for Deployment
+1. Set Up AWS Services
+
+- `Amazon S3`: Create S3 buckets to store raw and processed data.
+
+- `AWS Lambda´: Deploy Python-based Lambda functions to fetch real-time and historical exchange rate data from the API.
+
+- `Amazon Kinesis Data Firehose`: Configure Kinesis Data Firehose to stream data from Lambda functions to S3.
+
+- `AWS Glue´: Set up Glue crawlers to catalog the data stored in S3 and create Glue ETL workflows.
+
+- `AWS Athena`: Configure Athena to query the data cataloged by Glue.
+
+2. Configure EventBridge
+
+- Set up `EventBridge schedules` to trigger Lambda functions for hourly and daily data updates.
+ 
+- Schedule  `Glue ETL` data workflow executions to ensure timely processing and storage of data.
+3. Data Ingestion and Processing
+
+- Implement `Lambda` function you need. Ensure Lambda functions are correctly fetching data from the exchange rate API and streaming it to Kinesis Data Firehose.
+ 
+- Verify that Glue crawlers are cataloging data and Glue ETL workflows are running as scheduled.
+  
+4. Visualization with Grafana Cloud
+
+- Set up `Grafana Cloud` and configure data sources to pull data from `AWS Athena`.
+  
+- Create dashboards in Grafana to visualize real-time and/or historical SEK exchange rate data against EUR, USD, and DKK.
 
 ## Future Improvements
 
